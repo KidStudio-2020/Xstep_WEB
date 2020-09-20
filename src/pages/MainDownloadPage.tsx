@@ -114,7 +114,13 @@ export const MainDownloadPage = () => {
 							<img src={android} alt='' />
 							Android
 						</a>
-						<a className='downloadLink'>
+						<a 
+							onClick={
+								function (event){
+								alert('IOS 버전은 스토어에 올라가는중입니다! 잠시만 기다려주세요!.')
+							   }
+			    			   }
+							className='downloadLink'>
 							<img src={apple} alt='' />
 							iOS
 						</a>
@@ -141,7 +147,12 @@ export const MainDownloadPage = () => {
 									<img src={android} alt='' />
 									Android
 								</a>
-								<a className='downloadLink'>
+								<a 
+									onClick={function (event){
+										alert('IOS 버전은 스토어에 올라가는중입니다! 잠시만 기다려주세요!.')
+									   }
+								   }
+									className='downloadLink'>
 									<img src={apple} alt='' />
 									iOS
 								</a>
