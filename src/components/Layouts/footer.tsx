@@ -84,18 +84,18 @@ export const Footer = () => {
 					<img src={logo} alt='' />
 					<p>
 						© 2020 Xstep
-						<br /> All Rights Reserved.
+						<br /> All Rights Reserved. Made By <a href='https://github.com/HyoGeunGit/Xstep_WEB'>HyoGeunGit</a>
 					</p>
 				</div>
 				<div style={{ flex: 1 }} />
 				<div style={{ display: 'flex', alignItems: 'center' }}>
-					<a href='' className='circle'>
+					<a href='https://github.com/KidStudio-2020' className='circle'>
 						<img src={github} alt='' />
 					</a>
-					<a href='' className='circle'>
+					<a href='https://www.facebook.com/xstepofficial' className='circle'>
 						<img src={facebook} alt='' />
 					</a>
-					<a href='' className='circle'>
+					<a href='https://www.youtube.com/channel/UCk0DdCggt056wFvZ6oWfm8A?fbclid=IwAR1TTenL31W_vk5mS5sc3exzujsnH4qqxwGsuJ4buNKQIwJ0TIkGU4xkbGc' className='circle'>
 						<img src={youtube} alt='' />
 					</a>
 				</div>
