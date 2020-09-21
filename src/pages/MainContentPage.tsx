@@ -3,9 +3,12 @@ import styled, { css } from 'styled-components';
 import { throttle } from 'lodash';
 import { PageContainer, InnerContainer } from '../components';
 import { isMobile } from 'react-device-detect';
-const content_play = 'https://firebasestorage.googleapis.com/v0/b/xstep-dd16e.appspot.com/o/src%2Fmockup%2Fplay-mockup%402x.png?alt=media&token=659c0f77-471f-407f-9796-184be2bbcee5'
-const content_home = 'https://firebasestorage.googleapis.com/v0/b/xstep-dd16e.appspot.com/o/src%2Fmockup%2Fhome-mockup%402x.png?alt=media&token=9729e6e3-970e-40ff-a5e8-4c6e12ffb187'
-const content_splash = 'https://firebasestorage.googleapis.com/v0/b/xstep-dd16e.appspot.com/o/src%2Fmockup%2Fsplash-mockup%402x.png?alt=media&token=88cb5c49-f7f0-4659-b68a-b55a07a25a70'
+const content_play =
+	'https://firebasestorage.googleapis.com/v0/b/xstep-dd16e.appspot.com/o/src%2Fmockup%2Fplay-mockup%402x.png?alt=media&token=659c0f77-471f-407f-9796-184be2bbcee5';
+const content_home =
+	'https://firebasestorage.googleapis.com/v0/b/xstep-dd16e.appspot.com/o/src%2Fmockup%2Fhome-mockup%402x.png?alt=media&token=9729e6e3-970e-40ff-a5e8-4c6e12ffb187';
+const content_splash =
+	'https://firebasestorage.googleapis.com/v0/b/xstep-dd16e.appspot.com/o/src%2Fmockup%2Fsplash-mockup%402x.png?alt=media&token=88cb5c49-f7f0-4659-b68a-b55a07a25a70';
 const Container = styled.div`
 	width: 100%;
 	height: 300vh;
@@ -25,13 +28,21 @@ const ContentContainer = styled.div<{ isFixed: boolean }>`
 	display: flex;
 	align-items: center;
 	${({ isFixed }) =>
-		isFixed &&
-		css`
-			height: 100%;
-			position: fixed;
-			top: 0;
-			left: 0;
-		`}
+		isFixed
+			? css`
+					position: sticky;
+					top: 0;
+					left: 0;
+					/* height: 100%;
+					position: fixed;
+					top: 0;
+					left: 0; */
+			  `
+			: css`
+					position: sticky;
+					top: 0;
+					left: 0;
+			  `}
 	background-color: #d8e2eb;
 	justify-content: center;
 	padding-right: 20px;
@@ -159,8 +170,7 @@ const contentData = [
 	{
 		img: content_play,
 		title: '엄지만으로도 문제 \n없는 세상 쉬운 조작!',
-		des:
-			'터치와 홀드, 슬라이드만 익히면 끝! \n중앙에서 날아오는 노트들을 잘 보고 \n리듬에 맞춰 처리하세요!',
+		des: '터치와 홀드, 슬라이드만 익히면 끝! \n중앙에서 날아오는 노트들을 잘 보고 \n리듬에 맞춰 처리하세요!',
 	},
 ];
 
@@ -272,7 +282,7 @@ export const MainContentPage = () => {
 						<ContentContainer isFixed={isFixed}>
 							<img src={contentData[page].img} />
 							<div style={{ flex: 1, maxWidth: '240px' }} />
-							<div>
+							<div style={{ width: '550px', height: '340px' }}>
 								<div className='buttonList'>
 									<button
 										className='left'

@@ -107,7 +107,7 @@ export const MainDownloadPage = () => {
 							플레이해보세요!
 						</p>
 						<a
-							href='https://play.google.com/store/apps/details?id=com.idiots.xstep'
+							href='https://play.google.com/store/apps/details?id=com.Idiots.XStep&fbclid=IwAR1AUsMDSIsShrgyl_ZDrpp2joY7_9lRWPi9tCXAuJ1a9hJTIHAIDfRJO28'
 							className='downloadLink'
 							style={{ marginBottom: '21px' }}
 						>
@@ -139,7 +139,7 @@ export const MainDownloadPage = () => {
 							</p>
 							<div style={{ display: 'flex' }}>
 								<a
-									href='https://play.google.com/store/apps/details?id=com.idiots.xstep'
+									href='https://play.google.com/store/apps/details?id=com.Idiots.XStep&fbclid=IwAR1AUsMDSIsShrgyl_ZDrpp2joY7_9lRWPi9tCXAuJ1a9hJTIHAIDfRJO28'
 									target='_blank'
 									className='downloadLink'
 									style={{ marginRight: '70px' }}

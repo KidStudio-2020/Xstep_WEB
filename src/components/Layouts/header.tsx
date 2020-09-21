@@ -25,6 +25,7 @@ const InnerContainer = styled.div`
 	justify-content: center;
 	img {
 		width: 92px;
+		cursor: pointer;
 		height: 25px;
 	}
 	p {
@@ -41,7 +42,16 @@ export const Header = () => {
 	return (
 		<Container>
 			<InnerContainer>
-				<img src={logo} alt='' />
+				<img
+					src={logo}
+					alt=''
+					onClick={() => {
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth',
+						});
+					}}
+				/>
 				<div style={{ flex: 1 }} />
 				<p
 					onClick={() => {
